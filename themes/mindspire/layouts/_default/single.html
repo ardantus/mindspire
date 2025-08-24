@@ -12,6 +12,20 @@
       {{ .Content }}
     </div>
     {{ partial "comments.html" . }}
+    <section class="related-posts">
+      <h3>Lainnya</h3>
+      {{ $currentPage := . }}
+      {{ $related := where (where .Site.RegularPages "Section" "posts") "Permalink" "ne" .Permalink | shuffle | first 3 }}
+      {{ with $related }}
+      <ul>
+        {{ range . }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span class="post-date">{{ .Date.Format "January 2, 2006" }}</span></li>
+        {{ end }}
+      </ul>
+      {{ else }}
+      <p>Tidak ada artikel lain untuk saat ini.</p>
+      {{ end }}
+    </section>
   </article>
 </div>
 {{ end }}
