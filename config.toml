@@ -1,0 +1,7 @@
+baseURL = "http://your-site.com/"
+languageCode = "en-us"
+title = "My Mindspire Blog"
+theme = "mindspire"
+
+[params]
+  disqusShortname = "your-disqus-shortname"

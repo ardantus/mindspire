@@ -1,0 +1,10 @@
+name = "Mindspire"
+license = "MIT"
+licenselink = "https://github.com/yourname/mindspire/LICENSE"
+description = "A Hugo theme mimicking Medium's clean design with Disqus comments"
+homepage = "https://github.com/yourname/mindspire"
+min_version = "0.41.0"
+
+[author]
+  name = "Your Name"
+  homepage = "https://yourwebsite.com"
