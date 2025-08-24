@@ -1,4 +1,4 @@
-baseURL = 'https://mindspire.ardan.ovh/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = 'Inspirasi Pikiran Rakyat'
 
