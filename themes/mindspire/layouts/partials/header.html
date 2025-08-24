@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Title }} | {{ .Site.Title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
 <body>
@@ -11,8 +12,8 @@
     <div class="container">
       <a href="{{ .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
       <nav>
-        <a href="{{ .Site.BaseURL }}">Home</a>
-        <a href="{{ .Site.BaseURL }}about">About</a>
+        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "about/" | relURL }}">About</a>
       </nav>
     </div>
   </header>
